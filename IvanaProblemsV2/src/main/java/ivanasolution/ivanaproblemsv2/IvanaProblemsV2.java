@@ -1,11 +1,10 @@
-
-package ivanasolution.ivanaproblems;
+package ivanasolution.ivanaproblemsv2;
 
 import java.util.Scanner;
 
-public class IvanaProblems {
+public class IvanaProblemsV2 {
 
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter message to Ivana: ");
         String msg = scanner.nextLine();
@@ -20,12 +19,3 @@ public class IvanaProblems {
         System.out.println(misplaced == 1 ? "JEJE!" : "uWu");
     }
 }
-            
-            
-            
-           
-        
-        
-           
-           
-  
