@@ -13,7 +13,7 @@ public class SimpleCalculator extends javax.swing.JFrame {
   }
 
   double num;
-  int ans, calculation; // Changed data type to int
+  int ans, calculation; 
 
   public void arithmetic() {
     switch (calculation) {
@@ -25,15 +25,12 @@ public class SimpleCalculator extends javax.swing.JFrame {
         ans = (int) num - Integer.parseInt(jTextField1.getText());
         jTextField1.setText(Integer.toString(ans));
         break;
-      case 3: // Division might lose precision, handle with care
-        // Implement logic to handle division by zero or small numbers
+      case 3: 
         double tempResult = num / Double.parseDouble(jTextField1.getText());
-        if (tempResult % 1 == 0) { // Check if result is whole number
+        if (tempResult % 1 == 0) { 
           ans = (int) tempResult;
           jTextField1.setText(Integer.toString(ans));
         } else {
-          // Handle case where result is not a whole number (optional)
-          // You can display an error message or use a different approach
         }
         break;
       case 4:
